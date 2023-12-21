@@ -1,0 +1,17 @@
+<.header>
+  Accounts <%= @accounts.id %>
+  <:subtitle>This is a accounts record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/accounts/#{@accounts}/edit"}>
+      <.button>Edit accounts</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Number"><%= @accounts.number %></:item>
+  <:item title="Owner"><%= @accounts.owner %></:item>
+  <:item title="Balance"><%= @accounts.balance %></:item>
+</.list>
+
+<.back navigate={~p"/accounts"}>Back to accounts</.back>
