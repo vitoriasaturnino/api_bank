@@ -18,6 +18,8 @@ defmodule ApiBankWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    resources "/accounts", AccountsController
   end
 
   # Other scopes may use custom stacks.
