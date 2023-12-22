@@ -1,4 +1,8 @@
 defmodule ApiBankWeb.Telemetry do
+  @moduledoc """
+  Defines the metrics and measurements to be collected by the Telemetry library.
+  """
+
   use Supervisor
   import Telemetry.Metrics
 

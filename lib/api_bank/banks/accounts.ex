@@ -1,4 +1,8 @@
 defmodule ApiBank.Banks.Accounts do
+  @moduledoc """
+  This module defines the Accounts schema.
+  """
+
   use Ecto.Schema
   import Ecto.Changeset
 
