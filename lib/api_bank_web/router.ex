@@ -20,6 +20,12 @@ defmodule ApiBankWeb.Router do
     get "/", PageController, :home
   end
 
+  scope "/api", ApiBankWeb do
+    pipe_through :api
+
+    resources "/accounts", AccountsController, except: [:new, :edit]
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", ApiBankWeb do
   #   pipe_through :api
